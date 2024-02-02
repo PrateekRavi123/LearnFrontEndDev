@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex; gap:100px;">
+        <input type="text" id="firstdigit">
+        <input type="text" id="lastdigit">
+    </div>
+    <button onclick="addFunction()">ADD</button>
+    <button onclick="subtractFunction()">subtract</button>
+    <button onclick="divideFunction()">divide</button>
+    <button onclick="multiplyFunction()">multiply</button>
+    <h2 id="result"></h2>
+</body>
+<script>
+    function addFunction() {
+        var a = document.getElementById("firstdigit").value;
+        var b = document.getElementById("lastdigit").value;
+        var sum = Number(a) + Number(b);
+        document.getElementById("result").innerHTML = "SUM: " + sum;
+    }
+    function subtractFunction() {
+        var a = document.getElementById("firstdigit").value;
+        var b = document.getElementById("lastdigit").value;
+        var sum = Number(a) - Number(b);
+        document.getElementById("result").innerHTML = "Subtract: " + sum;
+    }
+    function divideFunction() {
+        var a = document.getElementById("firstdigit").value;
+        var b = document.getElementById("lastdigit").value;
+        var sum = Number(a) / Number(b);
+        document.getElementById("result").innerHTML = "Divide: " + sum;
+    }
+    function multiplyFunction() {
+        var a = document.getElementById("firstdigit").value;
+        var b = document.getElementById("lastdigit").value;
+        var sum = Number(a) * Number(b);
+        document.getElementById("result").innerHTML = "Multiply: " + sum;
+    }
+</script>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Html Form</h2>
+    <form>
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname"><br>
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname"><br>
+    </form>
+    <button onclick="myFunction()">Click Me</button>
+    <p id="result"></p>
+</body>
+<script> 
+    function myFunction(){
+        var fn = document.getElementById("firstname").value;
+        var ln = document.getElementById("lastname").value;
+        document.getElementById("result").innerHTML = fn+" "+ln;
+    }
+</script>
+</html>
